@@ -1,0 +1,21 @@
+/* Preloader CSS */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  &.active {
+    top: -110%;
+    opacity: 0;
+  }
+  &__image {
+    width: 100px;
+  }
+}

@@ -1,0 +1,47 @@
+/* Footer area CSS */
+.footer-ara {
+  background: $white;
+}
+.footer {
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  &__box {
+    flex: 1 1 20%;
+    text-align: start;
+  }
+  &__title {
+    text-transform: capitalize;
+    color: $black;
+    margin-bottom: 20px;
+  }
+  &__item {
+    padding-bottom: 10px;
+  }
+  &__link {
+    display: inline-block;
+    font-size: 17px;
+    color: $light_color;
+    transition: 0.3s;
+    text-transform: capitalize;
+    &:hover {
+      color: $green;
+      text-decoration: underline;
+    }
+  }
+  &__bottom {
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px 0;
+    border-top: $border;
+  }
+  &__author {
+    text-transform: capitalize;
+    color: $black;
+    &--green {
+      color: $green;
+    }
+  }
+}

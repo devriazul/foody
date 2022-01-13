@@ -1,0 +1,70 @@
+/* Dish-area CSS */
+.dish-area {
+  background: $light_bg;
+}
+.dish {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  &__box {
+    flex: 1 1 32%;
+    background: #fff;
+    text-align: center;
+    padding: 30px;
+    border: $border;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    &:hover .dish__icon--left {
+      left: 30px;
+    }
+    &:hover .dish__icon--right {
+      right: 30px;
+    }
+  }
+  &__image-img {
+    height: 170px;
+  }
+  &__icon {
+    margin-bottom: 15px;
+    &--left,
+    &--right {
+      height: 50px;
+      width: 50px;
+      line-height: 50px;
+      border-radius: 50%;
+      color: $black;
+      background: #eee;
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        color: $white;
+        background: $green;
+      }
+    }
+    &--left {
+      position: absolute;
+      top: 30px;
+      left: -100%;
+    }
+    &--right {
+      position: absolute;
+      top: 30px;
+      right: -100%;
+    }
+  }
+  &__title {
+    color: $black;
+    text-transform: capitalize;
+    margin-top: 20px;
+  }
+  &__stars {
+    color: gold;
+    margin: 10px 0;
+  }
+  &__price {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}

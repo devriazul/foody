@@ -1,0 +1,70 @@
+/* Header area CSS */
+.header-area {
+  padding: 20px 0;
+  background: $white;
+  box-shadow: $shadow;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  &.active {
+    padding: 10px 0;
+  }
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__logo {
+    font-size: 30px;
+    font-weight: 700;
+    &--icon {
+      color: $green;
+    }
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    display: inline-block;
+    margin-left: 5px;
+  }
+  &__link {
+    display: block;
+    padding: 8px 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: $light_color;
+    border-radius: 5px;
+    &.active,
+    &:hover {
+      color: $white;
+      background: $green;
+    }
+  }
+  &__icon {
+    text-align: center;
+    &--fas {
+      display: inline-block;
+      height: 45px;
+      width: 45px;
+      line-height: 45px;
+      font-size: 20px;
+      color: $black;
+      background: $light_bg;
+      margin-left: 5px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        color: $white;
+        background: $green;
+      }
+    }
+  }
+}
+#nav-btn {
+  display: none;
+}

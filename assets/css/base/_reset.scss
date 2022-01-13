@@ -1,0 +1,87 @@
+/* Reset Code */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-padding-top: 60px;
+}
+html::-webkit-scrollbar {
+  width: 8px;
+}
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+html::-webkit-scrollbar-thumb {
+  background: $green;
+  border-radius: 50px;
+}
+.container {
+  width: 1320px;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: $black;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+button,
+input {
+  border: none;
+  outline: none;
+}
+@for $i from 1 through 6 {
+  .mt-#{$i*10} {
+    margin-top: $i * 10px;
+  }
+  .mb-#{$i*10} {
+    margin-bottom: $i * 10px;
+  }
+  .pt-#{$i*10} {
+    padding-top: $i * 10px;
+  }
+  .pb-#{$i*10} {
+    padding-bottom: $i * 10px;
+  }
+}
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-transform: capitalize;
+  background: $black;
+  color: $white;
+  margin-top: 20px;
+  border-radius: 5px;
+  &:hover {
+    letter-spacing: 2px;
+    background-color: $green;
+  }
+}
+.section {
+  text-align: center;
+  margin-bottom: 20px;
+  &__sub--title {
+    color: $green;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+  &__title {
+    color: $black;
+    font-size: 45px;
+    text-transform: capitalize;
+  }
+}

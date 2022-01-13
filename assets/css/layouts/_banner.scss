@@ -1,0 +1,30 @@
+/* Banner area CSS */
+.banner-area {
+  margin-top: 80px;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  &__box {
+    width: 49%;
+  }
+  &__sub-title {
+    color: $green;
+    font-size: 30px;
+    text-transform: capitalize;
+    padding: 15px 0;
+  }
+  &__title {
+    color: $black;
+    font-size: 60px;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+  &__text {
+    color: $light_color;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

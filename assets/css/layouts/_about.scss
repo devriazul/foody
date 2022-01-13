@@ -1,0 +1,50 @@
+/* About area CSS */
+.about-area {
+  background: $white;
+}
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  &__box {
+    flex: 1 1 49%;
+  }
+  &__content {
+    padding: 30px 0;
+  }
+  &__title {
+    color: $black;
+    font-size: 40px;
+    text-transform: capitalize;
+    padding: 30px 0;
+  }
+  &__text {
+    color: $light_color;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 5px 0;
+  }
+  &__icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+    &__box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: $green;
+      font-size: 25px;
+      padding: 15px 23px;
+      background: $light_bg;
+      border: $border;
+      border-radius: 5px;
+    }
+    &__title {
+      font-size: 20px;
+      text-transform: capitalize;
+      color: $black;
+    }
+  }
+}
